@@ -7,7 +7,7 @@
     <ProjectGuid>{8B464A3C-586A-477F-B650-FB688F69AABF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_06_RepositoryPattern_Console</RootNamespace>
-    <AssemblyName>_06_RepositoryPattern_Console</AssemblyName>
+    <AssemblyName>06_RepositoryPattern_Console</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\06_Repository Pattern_Repository\06_Repository Pattern_Repository.csproj">
+      <Project>{d52c4d89-3bae-4c69-871f-3570a3c6ff0d}</Project>
+      <Name>06_Repository Pattern_Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
